@@ -6,7 +6,11 @@
             <input type="text" name="url-input">
             <input type="submit">
         </form>
-
-        {{results}}
+        <ul>
+        	{% for i in results %}
+        	<li> {{i}} </li>
+        	{%endfor%}
+        	</ul>	
+        
     </body>
 </html>
